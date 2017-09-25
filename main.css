@@ -1,3 +1,30 @@
-h1 {
-    color: red;
+.container	{
+    background: #fff6ec;
+    width:	100%;
+}
+.center	{
+    background:	white;
+    width:	100%;
+    /*Вирівнює елемент по центру*/
+    margin:	auto;
+    /*Ширина екрану після якої з’являться
+    поля*/
+    max-width:	1000px;
+}
+.right	{
+    width:	400px;
+    height: 100px;
+    background-color: #bcea99;
+    float:	right;
+    padding:	50px;
+}
+.left	{
+
+    width:	300px;
+
+    height: 100px;
+    background-color: #ffafbc;
+    padding:	50px;
+
+    float:	left;
 }
