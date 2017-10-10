@@ -11,70 +11,83 @@
     <div	class="center">
         <!-- спочатку елементи з float	-->
         <div	class="right">
-            <div><b>Залишилося</b></div>
+            <div class="title"><b>Залишилося</b></div>
             <div class="goodsleft">
-                <span class="good1 good"><span class="goodname">помідори</span><span class="quantitycicle">2</span></span>
-                <span class="good2 good"><span class="goodname">печиво</span><span class="quantitycicle">2</span></span>
-                <span class="good3 good"><span class="goodname">сир</span><span class="quantitycicle">1</span></span>
+                <span class="good1 good"><span class="listgoodname">помідори</span><span class="quantitycircle">2</span></span>
+                <span class="good2 good"><span class="listgoodname">печиво</span><span class="quantitycircle">2</span></span>
+                <span class="good3 good"><span class="listgoodname">сир</span><span class="quantitycircle">1</span></span>
 
             </div>
 
-            <div><b>Куплено</b></div>
+            <div class="boughttitle"><b>Куплено</b></div>
         </div>
         <!-- потім fluid	едементи без float	-->
         <div	class="left">
-            <input	type="text"	 value="Назва товару">
-            <button	index="add" type="button">
+            <div id="inputform">
+            <input id="goodname"	type="text"	 placeholder="Назва товару">
+            <button	id="add" data-tooltip="Додати товар" >
                 Додати
             </button>
-            <div class="tovar1">
-                Помідори
-                <button class="1- -" 	type="button">
+            </div>
+
+            <div class="tovar tovar1">
+               <div class="goodname">Помідори
+               </div>
+                <div class="midbuttons">
+                <button class="1- minus" 	data-tooltip="Зменшити кількість">
                     -
                 </button>
                 <span class="quantity">
                     2
                 </span>
-                <button class="1+ +" type="button">+</button>
+                <button class="1+ plus" data-tooltip="Збільшити кількість">+</button>
+                </div>
 
+                <button class="bought" data-tooltip="Товар розкуплено">Куплено</button>
 
-                <button class="bought" type="button">Куплено</button>
-
-                <button class="delete" type="button">Х</button>
+                <button class="delete" data-tooltip="Видалити товар">x</button>
             </div>
-            <div class="tovar2">
-                Печиво
-                <button class="2- -" 	type="button">
+            <div class="tovar tovar2">
+                <div class="goodname"> Печиво</div>
+                <div class="midbuttons">
+                <button class="2- minus" 	data-tooltip="Зменшити кількість">
                     -
                 </button>
                 <span class="quantity">
                     2
                 </span>
-                <button class="2+ +" type="button">+</button>
+                <button class="2+ plus" data-tooltip="Збільшити кількість">+</button>
+                </div>
 
+                <button class="bought"  data-tooltip="Товар розкуплено">Куплено</button>
 
-                <button class="bought" type="button">Куплено</button>
-
-                <button class="delete" type="button">Х</button>
+                <button class="delete" data-tooltip="Видалити товар">x</button>
             </div>
-            <div class="tovar3">
-                Сир
-                <button class="3- -" 	type="button">
+            <div class="tovar tovar3">
+                <div class="goodname">Сир</div>
+                <div class="midbuttons">
+
+                <button class="3- minus" 	data-tooltip="Зменшити кількість">
                     -
                 </button>
                 <span class="quantity">
                     1
                 </span>
-                <button class="3+ +" type="button">+</button>
+                <button class="3+ plus" data-tooltip="Збільшити кількість">+</button>
+                </div>
 
+                <button class="bought" data-tooltip="Товар розкуплено">Куплено</button>
 
-                <button class="bought" type="button">Куплено</button>
-
-                <button class="delete" type="button">Х</button>
+                <button class="delete" data-tooltip="Видалити товар">x</button>
             </div>
         </div>
     </div>
 </div>
+<div id="badge">
+    <h1>Buy List</h1>
+<span id="crby">Created by:</span>
+<h3>Anastasia</h3></div>
+
 
 </body>
 </html>
